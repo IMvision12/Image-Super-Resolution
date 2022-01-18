@@ -31,4 +31,4 @@
     2. perpectual loss = content loss + adversarial loss
   
 # Dataset
-* [DIV2K](https://www.tensorflow.org/datasets/catalog/div2k) is a popular single-image super-resolution dataset which contains 1,000 images with different scenes and is splitted to 800 for training, 100 for validation and 100 for testing. 
+* [DIV2K](https://www.tensorflow.org/datasets/catalog/div2k) is a popular single-image super-resolution dataset which contains 1,000 images with different scenes and is splitted to 800 for training, 100 for validation and 100 for testing. This dataset contains low resolution images with different types of degradations. I have used x4 bicubic downsampled images as low resolution image
