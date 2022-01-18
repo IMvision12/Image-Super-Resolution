@@ -39,10 +39,7 @@
 ![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/edsr_2.PNG)
 # Results of SRGAN
 ### Training for more epochs and will definitely give good results, I have trained it only for 250 epochs.
-<p float="left">
-  <img src="https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/srgan_1" width="460" />
-</p>
-<img src="https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/srgan_1" width="600" />
-<img src="https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/srgan_2" width="600" />
-<img src="https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/srgan_3" width="600" />
+![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/srgan_1.PNG)
+![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/srgan_2.PNG)
+![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/srgan_3.PNG)
 
