@@ -6,8 +6,8 @@
 # EDSR 
 ### Architecture of EDSR :
 <p float="left">
-  <img src="https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/edsr.png" width="440" />
-  <img src="https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/residual.PNG" width="340" /> 
+  <img src="https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/edsr.png" width="460" />
+  <img src="https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/residual.PNG" width="360" /> 
 
   ## About Model:
     1. Baseline model used 16 residual blocks and original model with 32 blocks
