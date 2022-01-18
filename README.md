@@ -29,3 +29,6 @@
   ## About Loss Function
     1. The SRGAN uses perpectual loss function
     2. perpectual loss = content loss + adversarial loss
+  
+# Dataset
+* [DIV2K](https://www.tensorflow.org/datasets/catalog/div2k) is a popular single-image super-resolution dataset which contains 1,000 images with different scenes and is splitted to 800 for training, 100 for validation and 100 for testing. 
