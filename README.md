@@ -19,6 +19,8 @@
 ### Architecture of SRGAN :
 <p float="left">
   <img src="https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/srgan.PNG" width="800" />
+  
+  
   ## About Generator and Discriminator:
     1. Total 16 residual blocks were used in Generator Network
     2. Within the residual block, two convolutional layers are used, with small 3×3 kernels and 64 feature maps followed by batch-normalization layers and ParametricReLU.
