@@ -5,6 +5,6 @@
 
 # EDSR 
 ### Architecture of EDSR :
-<p align="center">
+<p align="left">
   <img src="https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/edsr.PNG" width="350" title="hover text">
 </p>
