@@ -14,3 +14,8 @@
   2. No of filters used in all conv2d layers of baseline model were 64 and in original model it was 256
   3. Total no of parameters in baseline model were 1.5M, whereas in original model it was 43M
   4. Loss Function used was L1
+  
+# SRGAN
+### Architecture of SRGAN :
+  <p float="left">
+  <img src="https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/srgan.PNG" width="600" />
