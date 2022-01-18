@@ -6,6 +6,6 @@
 # EDSR 
 ### Architecture of EDSR :
 <p float="left">
-  <img src="https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/edsr.png" width="500" />
-  <img src="https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/residual.PNG" width="500" /> 
+  <img src="https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/edsr.png" width="600" />
+  <img src="https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/residual.PNG" width="400" /> 
 
