@@ -36,3 +36,7 @@
 # Results of EDSR 
 ![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/edsr_1.PNG)
 ![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/edsr_2.PNG)
+# Results of SRGAN 
+![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/srgan_1.PNG)
+![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/srgan_2.PNG)
+![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/srgan_3.PNG)
