@@ -9,6 +9,7 @@
   <img src="https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/edsr.png" width="460" />
   <img src="https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/residual.PNG" width="360" /> 
 </p>
+
   ## About Model:
     1. Baseline model used 16 residual blocks and original model with 32 blocks
     2. No of filters used in all conv2d layers of baseline model were 64 and in original model it was 256
