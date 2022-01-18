@@ -18,4 +18,4 @@
 # SRGAN
 ### Architecture of SRGAN :
   <p float="left">
-  <img src="https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/srgan.PNG" width="600" />
+  <img src="https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/srgan.PNG" width="800" />
