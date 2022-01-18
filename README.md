@@ -11,6 +11,6 @@
 
   ## About Model
   1. Baseline model used 16 residual blocks and original model with 32 blocks
-  2. No of filters used in all conv2d layers were 64
+  2. No of filters used in all conv2d layers of baseline model were 64 and in original model it was 256
   3. Total no of parameters in baseline model were 1.5M, whereas in original model it was 43M
-  4. 
+  4. Loss Function used was L1
