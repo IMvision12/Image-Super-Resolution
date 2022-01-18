@@ -5,6 +5,13 @@
 
 # EDSR 
 ### Architecture of EDSR :
-<p align="left">
-  <img src="https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/edsr.png" width="500">
-</p>
+<table>
+  <tr>
+    <td>Architecture</td>
+     <td>Residual Block</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/edsr.png" width=270 height=480></td>
+    <td><img src="https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/residual.PNG" width=270 height=480></td>
+  </tr>
+ </table>
