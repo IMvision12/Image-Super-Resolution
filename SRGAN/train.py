@@ -5,8 +5,9 @@ from data import download_data
 import tensorflow as tf
 from tensorflow.keras.optimizers.schedules import PiecewiseConstantDecay
 
-#Generator Model
-new_gen = Generator()
+#Loading SRResNet Pre-trained Model
+#Using SRResNet as generator
+new_gen = tf.keras.models.load_model("SRResNet_model.h5")
 
 #Discriminator Model
 new_disc = Discriminator()
@@ -38,10 +39,9 @@ def train_step(low_res, high_res):
         loss_disc = discriminator_loss(SR_ouput, HR_output)
 
         # Generator Loss
-        mse_loss = mse_based_loss(SR, high_res)
         gen_loss = generator_loss(SR_ouput)
         cont_loss = content_loss(content_model, SR, high_res)
-        perceptual_loss = mse_loss + cont_loss + 1e-3 * gen_loss
+        perceptual_loss = cont_loss + 1e-3 * gen_loss
 
     gen_grads = gen_tape.gradient(perceptual_loss, new_gen.trainable_variables)
     generator_optimizer.apply_gradients(zip(gen_grads, new_gen.trainable_variables))

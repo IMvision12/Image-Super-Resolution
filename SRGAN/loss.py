@@ -1,4 +1,5 @@
 import tensorflow as tf
+from tensorflow.keras.applications.vgg19 import preprocess_input
 
 mse = tf.keras.losses.MeanSquaredError()
 binary_crossentropy = tf.keras.losses.BinaryCrossentropy(from_logits=False)
@@ -16,8 +17,11 @@ def generator_loss(fake_output):
 
 def content_loss(content_model, sr, hr):
     mse = tf.keras.losses.MeanSquaredError()
+    sr = preprocess_input(sr)
+    hr = preprocess_input(hr)
     hr_feature = content_model(hr) / 12.75
     sr_feature = content_model(sr) / 12.75
+
     return mse(hr_feature, sr_feature)
 
 def mse_based_loss(sr, hr):
@@ -29,3 +33,7 @@ def Content_Net(size=None, channels=3, i=5, j=4):
     block_name = 'block{}_conv{}'.format(i, j)
     model = tf.keras.Model(inputs=vgg19.input, outputs=vgg19.get_layer(block_name).output)
     return model
+
+def PSNR(sr, hr):
+    psnr_value = tf.image.psnr(hr, sr, max_val=255)[0]
+    return psnr_value
