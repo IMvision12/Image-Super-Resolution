@@ -37,8 +37,11 @@
 # Results of EDSR 
 ![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/edsr_1.PNG)
 ![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/edsr_2.PNG)
+![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/edsr_cat.PNG)
 # Results of SRGAN
-![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/srgan_1.PNG)
-![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/srgan_2.PNG)
-![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/srgan_3.PNG)
+![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/1.PNG)
+![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/2.PNG)
+![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/3.PNG)
+![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/4.PNG)
+
 
