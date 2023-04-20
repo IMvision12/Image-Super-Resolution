@@ -5,14 +5,11 @@ AUTOTUNE = tf.data.AUTOTUNE
 
 
 def flip_left_right(lr_img, hr_img):
-    rn = tf.random.uniform(shape=(), maxval=2, dtype=tf.int32)
-    flipped_lr_img, flipped_hr_img = tf.image.flip_left_right(
-        lr_img
-    ), tf.image.flip_left_right(hr_img)
-    return (
-        tf.stack((lr_img, hr_img), axis=0)[rn],
-        tf.stack((flipped_lr_img, flipped_hr_img), axis=0)[rn],
-    )
+    rn = tf.random.uniform(shape=(), maxval=1)
+    return tf.cond(rn < 0.5,
+                   lambda: (lr_img, hr_img),
+                   lambda: (tf.image.flip_left_right(lr_img),
+                            tf.image.flip_left_right(hr_img)))
 
 
 def random_rotate(lr_img, hr_img):
