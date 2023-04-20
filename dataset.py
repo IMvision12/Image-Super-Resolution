@@ -66,7 +66,7 @@ def download_data():
     train = div2k_data.as_dataset(split="train", as_supervised=True)
     train_cache = train.cache()
 
-    val = div2k_data.as_dataset(split="val", as_supervised=True)
+    val = div2k_data.as_dataset(split="validation", as_supervised=True)
     val_cache = val.cache()
 
     train_ds = preprocessing(train_cache)
