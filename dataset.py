@@ -49,7 +49,8 @@ def preprocessing(_cache):
     )
     ds = ds.map(random_rotate, num_parallel_calls=AUTOTUNE)
     ds = ds.map(flip_left_right, num_parallel_calls=AUTOTUNE)
-
+    
+    df = df.shuffle(buffer_size=500)
     ds = ds.batch(16)
     ds = ds.repeat(None)
     ds = ds.prefetch(buffer_size=AUTOTUNE)
