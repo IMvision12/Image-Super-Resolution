@@ -2,7 +2,7 @@ import tensorflow as tf
 from models.utils import PSNR
 from loss import discriminator_loss, generator_loss, content_loss, Content_Net
 
-class train_srgan():
+class train_srgan:
     def __init__(self, generator, Discriminator):
         self.content_model = Content_Net()
         self.content_loss = content_loss
@@ -43,7 +43,7 @@ class train_srgan():
 
         return perceptual_loss, loss_disc, psnr_value
     
-class train_edsr_srresnet():
+class train_edsr_srresnet:
     def __init__(self, model):
         self.model = model
         self.loss_fn = tf.keras.losses.MeanAbsoluteError()
@@ -66,5 +66,3 @@ class train_edsr_srresnet():
         self.optim.apply_gradients(zip(gradients, self.model.trainable_variables))
 
         return loss_value, psnr_value
-    
-print(train_edsr_srresnet.train_step)
