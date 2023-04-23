@@ -3,7 +3,7 @@ from models.utils import PSNR
 from loss import discriminator_loss, generator_loss, content_loss, Content_Net
 
 class train_srgan:
-    def __init__(self, generator, Discriminator, generator_optimizer, discriminator_optimizer):
+    def __init__(self, generator, Discriminator):
         self.content_model = Content_Net()
         self.content_loss = content_loss
         self.generator_loss = generator_loss
@@ -11,9 +11,8 @@ class train_srgan:
         self.PSNR = PSNR
         self.generator = generator
         self.discriminator = Discriminator
-        #tf.keras.optimizers.Adam(learning_rate=tf.keras.optimizers.schedules.PiecewiseConstantDecay(boundaries=[10000], values=[1e-4, 1e-5]))
-        self.generator_optimizer = generator_optimizer
-        self.discriminator_optimizer = discriminator_optimizer
+        self.generator_optimizer = tf.keras.optimizers.Adam(learning_rate=tf.keras.optimizers.schedules.PiecewiseConstantDecay(boundaries=[10000], values=[1e-4, 1e-5]))
+        self.discriminator_optimizer = tf.keras.optimizers.Adam(learning_rate=tf.keras.optimizers.schedules.PiecewiseConstantDecay(boundaries=[10000], values=[1e-4, 1e-5]))
 
     @tf.function
     def train_step(self, low_res, high_res):
@@ -45,11 +44,11 @@ class train_srgan:
         return perceptual_loss, loss_disc, psnr_value
     
 class train_edsr_srresnet:
-    def __init__(self, model, optim):
+    def __init__(self, model):
         self.model = model
         self.loss_fn = tf.keras.losses.MeanAbsoluteError()
-        #tf.keras.optimizers.Adam(learning_rate=tf.keras.optimizers.schedules.PiecewiseConstantDecay(boundaries=[10000], values=[1e-4, 1e-5]))
-        self.optim = optim
+        
+        self.optim = tf.keras.optimizers.Adam(learning_rate=tf.keras.optimizers.schedules.PiecewiseConstantDecay(boundaries=[10000], values=[1e-4, 1e-5]))
 
     @tf.function
     def train_step(self, low_res, high_res):
