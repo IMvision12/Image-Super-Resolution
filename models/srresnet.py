@@ -26,14 +26,14 @@ def SRResNet(num_filters=64, num_blocks=16):
     x = x_new = tf.keras.layers.PReLU(shared_axes=[1, 2])(x)
 
     for _ in range(num_blocks):
-        x = ResBlock(x)
+        x = ResBlock(x, num_filters)
 
     x = tf.keras.layers.Conv2D(num_filters, kernel_size=3, padding='same')(x)
     x = tf.keras.layers.BatchNormalization()(x)
     x = tf.keras.layers.Add()([x_new, x])
 
-    x = Upsampling(x)
-    x = Upsampling(x)
+    x = Upsampling(x, num_filters)
+    x = Upsampling(x, num_filters)
 
     x = tf.keras.layers.Conv2D(3, kernel_size=9, padding='same', activation='tanh')(x)
     output_layer = Denormalize2SRGAN()(x)
