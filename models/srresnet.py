@@ -27,7 +27,7 @@ class SRResNet(tf.keras.Model):
         x = x_new = tf.keras.layers.PReLU(shared_axes=[1, 2])(x)
 
         for _ in range(num_blocks):
-            x = ResBlock(x)
+            x = ResBlock(x, num_filters)
 
         x = tf.keras.layers.Conv2D(num_filters, kernel_size=3, padding="same")(x)
         x = tf.keras.layers.BatchNormalization()(x)
