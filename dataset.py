@@ -6,10 +6,11 @@ AUTOTUNE = tf.data.AUTOTUNE
 
 def flip_left_right(lr_img, hr_img):
     rn = tf.random.uniform(shape=(), maxval=1)
-    return tf.cond(rn < 0.5,
-                   lambda: (lr_img, hr_img),
-                   lambda: (tf.image.flip_left_right(lr_img),
-                            tf.image.flip_left_right(hr_img)))
+    return tf.cond(
+        rn < 0.5,
+        lambda: (lr_img, hr_img),
+        lambda: (tf.image.flip_left_right(lr_img), tf.image.flip_left_right(hr_img)),
+    )
 
 
 def random_rotate(lr_img, hr_img):
@@ -49,7 +50,7 @@ def preprocessing(_cache):
     )
     ds = ds.map(random_rotate, num_parallel_calls=AUTOTUNE)
     ds = ds.map(flip_left_right, num_parallel_calls=AUTOTUNE)
-    
+
     ds = ds.shuffle(buffer_size=500)
     ds = ds.batch(16)
     ds = ds.repeat(None)
