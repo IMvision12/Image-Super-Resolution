@@ -1,6 +1,7 @@
 import tensorflow as tf
 import numpy as np
 
+@tf.keras.utils.register_keras_serializable("models")
 class NormalizeEDSR(tf.keras.layers.Layer):
     def __init__(self):
         super(NormalizeEDSR, self).__init__()
@@ -9,6 +10,7 @@ class NormalizeEDSR(tf.keras.layers.Layer):
     def call(self, inputs):
         return tf.divide(tf.subtract(inputs, self.mean), 127.5)
 
+@tf.keras.utils.register_keras_serializable("models")
 class DenormalizeEDSR(tf.keras.layers.Layer):
     def __init__(self):
         super(DenormalizeEDSR, self).__init__()
@@ -17,6 +19,7 @@ class DenormalizeEDSR(tf.keras.layers.Layer):
     def call(self, inputs):
         return tf.add(tf.multiply(inputs, 127.5), self.mean)
 
+@tf.keras.utils.register_keras_serializable("models")
 class NormalizeSRGAN(tf.keras.layers.Layer):
     def __init__(self):
         super(NormalizeSRGAN, self).__init__()
@@ -24,13 +27,15 @@ class NormalizeSRGAN(tf.keras.layers.Layer):
     def call(self, inputs):
         return tf.divide(inputs, 255.0)
 
+@tf.keras.utils.register_keras_serializable("models")
 class Normalize2SRGAN(tf.keras.layers.Layer):
     def __init__(self):
         super(Normalize2SRGAN, self).__init__()
         
     def call(self, inputs):
         return tf.divide(tf.subtract(inputs, 127.5), 127.5)
-
+    
+@tf.keras.utils.register_keras_serializable("models")
 class Denormalize2SRGAN(tf.keras.layers.Layer):
     def __init__(self):
         super(Denormalize2SRGAN, self).__init__()
