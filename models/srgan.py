@@ -16,7 +16,7 @@ def Discriminator_block(inputs, num_filters, strides=1):
 
 def Discriminator(num_filters=64):
     input_layer = tf.keras.layers.Input(shape=(96, 96, 3))
-    x = Normalize2SRGAN()(input_layer)
+    x = tf.keras.layers.Lambda(Normalize2SRGAN)(input_layer)
     x = tf.keras.layers.Conv2D(num_filters, kernel_size=3, strides=1, padding='same')(x)
     x = tf.keras.layers.LeakyReLU(alpha=0.2)(x)
 
