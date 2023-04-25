@@ -33,8 +33,8 @@ class SRResNet(tf.keras.Model):
         x = tf.keras.layers.BatchNormalization()(x)
         x = tf.keras.layers.Add()([x_new, x])
 
-        x = Upsampling(x)
-        x = Upsampling(x)
+        x = Upsampling(x, num_filters)
+        x = Upsampling(x, num_filters)
 
         x = tf.keras.layers.Conv2D(3, kernel_size=9, padding="same", activation="tanh")(
             x
