@@ -37,7 +37,7 @@
 # Results
 ![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/1.PNG)
 ![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/2.PNG)
-![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/3.PNG)
+![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/3.png)
 ![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/4.PNG)
 
 
