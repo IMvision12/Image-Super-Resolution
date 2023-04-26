@@ -34,15 +34,10 @@
 # Dataset
 * [DIV2K](https://www.tensorflow.org/datasets/catalog/div2k) is a popular single-image super-resolution dataset which contains 1,000 images with different scenes and is splitted to 800 for training, 100 for validation and 100 for testing. This dataset contains low resolution images with different types of degradations. I have used x4 bicubic downsampled images as low resolution image
 
-# Results of EDSR 
-![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/edsr_1.PNG)
-![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/edsr_2.PNG)
-![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/edsr_cat.PNG)
-
-# Results of SRGAN
-![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/1.PNG)
-![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/2.PNG)
-![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/3.PNG)
-![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/4.PNG)
+# Results
+![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/1.png)
+![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/2.png)
+![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/3.png)
+![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/4.png)
 
 
