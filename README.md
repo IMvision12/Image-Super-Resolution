@@ -44,5 +44,6 @@
 ![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/7.png)
 ![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/8.png)
 ![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/9.png)
+![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/10.png)
 
 
