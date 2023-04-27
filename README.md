@@ -36,6 +36,7 @@
 
 # Results
 ![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/1.PNG)
+![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/10.PNG)
 ![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/2.PNG)
 ![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/3.png)
 ![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/4.PNG)
@@ -44,6 +45,6 @@
 ![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/7.png)
 ![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/8.png)
 ![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/9.png)
-![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/10.PNG)
+
 
 
