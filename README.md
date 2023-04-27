@@ -39,5 +39,10 @@
 ![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/2.PNG)
 ![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/3.png)
 ![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/4.PNG)
+![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/5.PNG)
+![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/6.PNG)
+![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/7.PNG)
+![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/8.PNG)
+![alt_text](https://github.com/IMvision12/Image-Super-Resolution/blob/main/Images/9.PNG)
 
 
